@@ -33,17 +33,17 @@ export default {
 
       // create dummy data -> just one element per circle
       var data = [
-        { "name": "A" },
-        { "name": "B" },
-        { "name": "C" },
-        { "name": "D" },
-        { "name": "E" },
-        { "name": "F" },
-        { "name": "G" },
-        { "name": "H" },
-        { "name": "A1" },
-        { "name": "A2" },
-        { "name": "A3" },
+        { "name": "A", "size":10 },
+        { "name": "B", "size":20 },
+        { "name": "C", "size":40 },
+        { "name": "D", "size":60 },
+        { "name": "E", "size":14 },
+        { "name": "F", "size":19 },
+        { "name": "G", "size":30 },
+        { "name": "H", "size":40 },
+        { "name": "A1", "size":30 },
+        { "name": "A2", "size":16 },
+        { "name": "A3", "size":30 },
         ]
 
       // Initialize the circle: all located at the center of the svg area
@@ -53,7 +53,8 @@ export default {
         .data(data)
         .enter()
         .append("circle")
-          .attr("r", 25)
+//          .attr("r", 25)
+          .attr("r", function(d) { return d.size })
           .attr("cx", width / 2)
           .attr("cy", height / 2)
           .style("fill", "#69b3a2")

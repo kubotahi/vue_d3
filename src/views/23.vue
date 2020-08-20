@@ -100,7 +100,8 @@ export default {
       //.style("text-anchor", function(d) { return d.children ? "end" : "middle" })
       .style("text-anchor", "middle")
       //.attr("font-size", "150%")
-      .attr("font-size", "12")
+      .attr("font-size", "120")
+      .attr("fill", "#ffffff")
       .text(function(d) { return d.children ? "" : d.data.name; })
 
 
