@@ -20,6 +20,7 @@
       <a href="https://www.npmjs.com/package/d3" target="_blank">https://www.npmjs.com/package/d3</a><br>
       <a href="https://github.com/gywgithub/vue-d3-examples" target="_blank">https://github.com/gywgithub/vue-d3-examples</a><br>
       <a href="https://ultimatecourses.com/blog/create-data-visualization-chart-vuejs-d3" target="_blank">https://ultimatecourses.com/blog/create-data-visualization-chart-vuejs-d3</a><br>      
+      <a href="https://github.com/NataliaTepluhina/vue-d3-example" target="_blank">https://github.com/NataliaTepluhina/vue-d3-example</a><br>
       <br>
       <br>
 
