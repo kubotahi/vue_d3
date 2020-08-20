@@ -34,7 +34,7 @@ export default {
   text-align: right;
   padding: 3px;
   margin: 1px;
-  color: white;
+  color: #000000;
 }
 .container-chart {
   margin: auto;

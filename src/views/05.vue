@@ -118,6 +118,6 @@ export default {
 </script>
 <style>
 text {
-  fill: #ffffff;
+  fill: #000000;
 }
 </style>

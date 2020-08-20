@@ -287,7 +287,7 @@ export default {
 }
 #vizTreeII .node text {
   font: 12px sans-serif;
-  fill: #ffffff;
+  fill: #000000;
 }
 #vizTreeII .link {
   fill: none;
