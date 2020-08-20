@@ -1,9 +1,7 @@
 <template>
   <div class="container">
 
-    <div class="col_2">
-      <svg id="vizTreeII" />
-    </div>
+    <svg id="vizTreeII" width="600" height="600"/>
 
   </div>
 </template>
@@ -281,11 +279,6 @@ export default {
 }
 </script>
 <style>
-#vizTreeII {
-  width: 600px;
-  height: 1000px;
-}
-
 #vizTreeII circle {
   fill: rgb(218, 20, 135);
   stroke: #54a8ff;

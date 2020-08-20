@@ -1,9 +1,7 @@
 <template>
   <div class="container">
 
-    <div class="col_2">
-      <svg id="svg" width="600" height="600"></svg>
-    </div>
+    <svg id="svg" width="600" height="600"></svg>
 
   </div>
 </template>
