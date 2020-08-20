@@ -1,5 +1,8 @@
 # vue_d3
 
+## Demo
+https://kubotahi.github.io/vue_d3/
+
 ## Project setup
 ```
 npm install
