@@ -16,7 +16,7 @@ export default {
     let p = d3.select('body')
       .selectAll('p')
 
-    p.text('Hello World')
+    p.text('Hello Vue.js + D3.js')
   }
 }
 

@@ -26,7 +26,6 @@ export default {
     let g = svg.append('g')
     //console.log(g)
 
-
     // zoom
     let zoomHandler = d3.zoom()
       .on('zoom', zoomActions)

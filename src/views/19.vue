@@ -75,7 +75,7 @@ export default {
       //let vx = 0, vy = 0
       //let vx = vxd[d]
       //let vy = vyd[d]
-      console.log(d)
+      //console.log(d)
     
       let vx = 500 + radius * Math.cos(angle)
       let vy = 500 + radius * Math.sin(angle)

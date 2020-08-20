@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <b>Vue.js + D3.js の デモ</b>
+    <router-link to="/"><div class="title">Vue.js + D3.js の デモ</div></router-link>
     <div id="nav">
-      <router-link to="/">Index</router-link> | 
       <router-link to="/01">01</router-link> | 
       <router-link to="/02">02</router-link> | 
       <router-link to="/03">03</router-link> | 
@@ -25,7 +24,7 @@
       <router-link to="/20">20</router-link> | 
       <router-link to="/21">21</router-link> | 
       <router-link to="/22">22</router-link> | 
-      <router-link to="/23">23</router-link> | 
+      <router-link to="/23">23</router-link>
     </div>
     <router-view/>
   </div>
@@ -40,6 +39,14 @@
   color: #2c3e50;
 }
 
+.title {
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2px 40px;
+  border-radius: 4px;  
+}
+
 #nav {
   padding: 30px;
 
@@ -52,4 +59,13 @@
     }
   }
 }
+
+#nav a.router-link-exact-active {
+    color: #ffffff;
+    background-color: #a8118d;
+    border-radius: 4px;
+    padding: 4px;
+    text-decoration: none;
+}
+
 </style>

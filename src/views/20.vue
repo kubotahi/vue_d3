@@ -21,7 +21,7 @@ export default {
     let svg = d3.select('.svg_g1')
     //let g = svg.append('g')
     let g = svg.append('g')
-    console.log(g)
+    //console.log(g)
 
     var data = {
       "name": "A",
