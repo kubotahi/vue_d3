@@ -1,9 +1,31 @@
 <template>
   <div id="app">
+    <b>Vue.js + D3.js の デモ</b>
     <div id="nav">
-      <router-link to="/">Home</router-link> | 
-      <router-link to="/">Home</router-link> | 
-      <router-link to="/">Home</router-link>
+      <router-link to="/">Index</router-link> | 
+      <router-link to="/01">01</router-link> | 
+      <router-link to="/02">02</router-link> | 
+      <router-link to="/03">03</router-link> | 
+      <router-link to="/04">04</router-link> | 
+      <router-link to="/05">05</router-link> | 
+      <router-link to="/06">06</router-link> | 
+      <router-link to="/07">07</router-link> | 
+      <router-link to="/08">08</router-link> | 
+      <router-link to="/09">09</router-link> | 
+      <router-link to="/10">10</router-link> | 
+      <router-link to="/11">11</router-link> | 
+      <router-link to="/12">12</router-link> | 
+      <router-link to="/13">13</router-link> | 
+      <router-link to="/14">14</router-link> | 
+      <router-link to="/15">15</router-link> | 
+      <router-link to="/16">16</router-link> | 
+      <router-link to="/17">17</router-link> | 
+      <router-link to="/18">18</router-link> | 
+      <router-link to="/19">19</router-link> | 
+      <router-link to="/20">20</router-link> | 
+      <router-link to="/21">21</router-link> | 
+      <router-link to="/22">22</router-link> | 
+      <router-link to="/23">23</router-link> | 
     </div>
     <router-view/>
   </div>

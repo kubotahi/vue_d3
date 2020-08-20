@@ -1,0 +1,25 @@
+<template>
+  <div class="container">
+
+    <div class="col_2">
+      <p></p>
+    </div>
+
+  </div>
+</template>
+
+<script>
+import * as d3 from 'd3'
+
+export default {
+  mounted () {
+    let p = d3.select('body')
+      .selectAll('p')
+
+    p.text('Hello World')
+  }
+}
+
+</script>
+<style>
+</style>
