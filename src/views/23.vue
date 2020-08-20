@@ -109,7 +109,7 @@ export default {
       zg.attr("transform", d3.event.transform);
     }
     svg.call(d3.zoom()
-      .scaleExtent([1 / 2, 12])
+      .scaleExtent([1/10, 12])
       .on("zoom", zoomed));	
 
   }
