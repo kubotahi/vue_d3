@@ -22,7 +22,7 @@ export default {
   name: 'vue-line-chart',
   data() {
     return {
-      data: [99, 71, 78, 25, 36, 92],
+      data: [30, 60, 45, 60, 99, 71, 24, 78, 25, 36, 92, 120],
       line: '',
     };
   },

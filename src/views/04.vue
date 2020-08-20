@@ -43,14 +43,14 @@ export default {
     // 边集
     let edges = [
       { source: 0, target: 4, relation: '友達', value: 1.3 },
-      { source: 4, target: 5, relation: '友達', value: 1 },
-      { source: 4, target: 6, relation: '友達', value: 1 },
+      { source: 4, target: 5, relation: '姉妹', value: 1 },
+      { source: 4, target: 6, relation: '片思い', value: 1 },
       { source: 4, target: 7, relation: '友達', value: 1 },
-      { source: 1, target: 6, relation: '友達', value: 2 },
+      { source: 1, target: 6, relation: '恋人', value: 2 },
       { source: 2, target: 5, relation: '友達', value: 0.9 },
-      { source: 3, target: 7, relation: '友達', value: 1 },
+      { source: 3, target: 7, relation: '腐れ縁', value: 1 },
       { source: 5, target: 6, relation: '友達', value: 1.6 },
-      { source: 6, target: 7, relation: '友達', value: 0.7 },
+      { source: 6, target: 7, relation: '兄弟', value: 0.7 },
       { source: 6, target: 8, relation: '友達', value: 2 }
     ]
     // 设置一个颜色比例尺
