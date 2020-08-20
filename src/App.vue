@@ -40,11 +40,13 @@
 }
 
 .title {
-  background-color: #333333;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 2px 40px;
-  border-radius: 4px;  
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 40px;
+    border-radius: 4px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 #nav {
