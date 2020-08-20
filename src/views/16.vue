@@ -42,6 +42,10 @@ export default {
     console.log(voronoi)
 
     let svg = d3.select('.svg_g1')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     //let g = svg.append('g')
     let g = svg.append('g')
     console.log(g)

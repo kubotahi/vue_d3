@@ -25,6 +25,9 @@ export default {
       let svg = d3.select('.svg_g1')
       //let g = svg.append('g')
 
+      // SVGのリセット
+      svg.selectAll("*").remove()
+
       //ズーム対象とするレイヤーを生成	
       var zg  = svg.append("g")
 

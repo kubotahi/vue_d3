@@ -36,6 +36,9 @@ export default {
 
     let svg = d3.select('.svg_g1')
 
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     var path = svg.append("g").selectAll("path");
     console.log(path)
 

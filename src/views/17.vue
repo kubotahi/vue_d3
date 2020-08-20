@@ -23,6 +23,10 @@ export default {
     let height = 1000;
 
     let svg = d3.select('.svg_g1')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     let g = svg.append('g')
     //console.log(g)
 
@@ -74,22 +78,6 @@ export default {
       .attr("fill", function(d,i) {return c10[i % 10]} )
       .attr("d", polygon);
 
-
-    // voronoi 母点
-    /*
-    //svg.selectAll("circle")
-    g.selectAll("circle")
-      .data(vertices)
-      .enter()
-      .append("circle")
-      .attr("r", 3)
-      .attr("cx", function(d) {
-        return d[0]
-      })
-      .attr("cy", function(d) {
-        return d[1]
-      });
-    */
 
     // text
     g.selectAll('text')

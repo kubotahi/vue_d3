@@ -16,6 +16,7 @@ export default {
     return {}
   },
   mounted () {
+
     let treeData = {
       'name': 'flare',
       'children': [
@@ -95,22 +96,27 @@ export default {
       ]
     }
 
-    var margin = { top: 120, right: 90, bottom: 30, left: 90 }
-    var width = 960 - margin.left - margin.right
-    var height = 600 - margin.top - margin.bottom
+    let margin = { top: 120, right: 90, bottom: 30, left: 90 }
+    let width = 960 - margin.left - margin.right
+    let height = 600 - margin.top - margin.bottom
 
-    var svg = d3.select('#vizTreeII').attr('viewBox', [-10, -10, width, height])
+    let svg = d3.select('#vizTreeII')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
+    svg = d3.select('#vizTreeII').attr('viewBox', [-10, -10, width, height])
       .append('g')
       .attr('transform', 'translate(' +
         margin.left + ',' + margin.top + ')')
 
-    var i = 0
-    var duration = 750
-    var root
+    let i = 0
+    let duration = 750
+    let root
 
     // declares a tree layout and assigns the size
-    var treemap = d3.tree().size([height, width]).nodeSize([30, 60])
-    // var treemap = d3.tree().nodeSize([width, height])
+    let treemap = d3.tree().size([height, width]).nodeSize([30, 60])
+    // let treemap = d3.tree().nodeSize([width, height])
 
     // Assigns parent, children, height, depth
     root = d3.hierarchy(treeData, function (d) { return d.children })
@@ -133,11 +139,11 @@ export default {
 
     function update (source) {
       // Assigns the x and y position for the nodes
-      var treeData = treemap(root)
+      let treeData = treemap(root)
 
       // Compute the new tree layout.
-      var nodes = treeData.descendants()
-      var links = treeData.descendants().slice(1)
+      let nodes = treeData.descendants()
+      let links = treeData.descendants().slice(1)
 
       // Normalize for fixed-depth.
       nodes.forEach(function (d) { d.y = d.depth * 180 })
@@ -145,11 +151,11 @@ export default {
       // ****************** Nodes section ***************************
 
       // Update the nodes...
-      var node = svg.selectAll('g.node')
+      let node = svg.selectAll('g.node')
         .data(nodes, function (d) { return d.id || (d.id = ++i) })
 
       // Enter any new modes at the parent's previous position.
-      var nodeEnter = node.enter().append('g')
+      let nodeEnter = node.enter().append('g')
         .attr('class', 'node')
         .attr('transform', function () {
           return 'translate(' + source.y0 + ',' + source.x0 + ')'
@@ -176,7 +182,7 @@ export default {
         .text(function (d) { return d.data.name })
 
       // UPDATE
-      var nodeUpdate = nodeEnter.merge(node)
+      let nodeUpdate = nodeEnter.merge(node)
 
       // Transition to the proper position for the node
       nodeUpdate.transition()
@@ -197,7 +203,7 @@ export default {
         .attr('cursor', 'pointer')
 
       // Remove any exiting nodes
-      var nodeExit = node.exit().transition()
+      let nodeExit = node.exit().transition()
         .duration(duration)
         .attr('transform', function () {
           return 'translate(' + source.y + ',' + source.x + ')'
@@ -215,19 +221,19 @@ export default {
       // ****************** links section ***************************
 
       // Update the links...
-      var link = svg.selectAll('path.link')
+      let link = svg.selectAll('path.link')
         .data(links, function (d) { return d.id })
 
       // Enter any new links at the parent's previous position.
-      var linkEnter = link.enter().insert('path', 'g')
+      let linkEnter = link.enter().insert('path', 'g')
         .attr('class', 'link')
         .attr('d', function () {
-          var o = { x: source.x0, y: source.y0 }
+          let o = { x: source.x0, y: source.y0 }
           return diagonal(o, o)
         })
 
       // UPDATE
-      var linkUpdate = linkEnter.merge(link)
+      let linkUpdate = linkEnter.merge(link)
 
       // Transition back to the parent element position
       linkUpdate.transition()
@@ -238,7 +244,7 @@ export default {
       link.exit().transition()
         .duration(duration)
         .attr('d', function () {
-          var o = { x: source.x, y: source.y }
+          let o = { x: source.x, y: source.y }
           return diagonal(o, o)
         })
         .remove()

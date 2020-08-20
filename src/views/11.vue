@@ -21,6 +21,10 @@ export default {
     let dataset = [20, 250, 210, 88, 170, 130, 90, 140, 47, 121]
     //let svg = d3.select('svg')
     let svg = d3.select('.svg_g1')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     let g = svg.append('g')
     // .attr('transform', 'translate(' + marge.top + ',' + marge.left + ')')
 

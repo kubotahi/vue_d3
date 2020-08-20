@@ -18,6 +18,10 @@ export default {
   mounted () {
     // create somewhere to put the force directed graph
     let svg = d3.select('svg')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     let width = +svg.attr('width')
     let height = +svg.attr('height')
 

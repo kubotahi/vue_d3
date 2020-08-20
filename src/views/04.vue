@@ -18,6 +18,10 @@ export default {
   mounted () {
     let marge = { top: 60, bottom: 60, left: 60, right: 60 }
     let svg = d3.select('svg')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     let width = svg.attr('width')
     let height = svg.attr('height')
     let g = svg.append('g')

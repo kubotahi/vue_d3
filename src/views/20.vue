@@ -19,6 +19,10 @@ export default {
     let height = 500;
 
     let svg = d3.select('.svg_g1')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     //let g = svg.append('g')
     let g = svg.append('g')
     //console.log(g)

@@ -19,6 +19,10 @@ export default {
     // let marge = { top: 60, bottom: 60, left: 60, right: 60 }
     let dataset = [250, 210, 170, 130, 90]
     let svg = d3.select('svg')
+
+    // SVGのリセット
+    svg.selectAll("*").remove()
+
     let g = svg.append('g')
     // .attr('transform', 'translate(' + marge.top + ',' + marge.left + ')')
 
