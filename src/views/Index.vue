@@ -9,8 +9,8 @@
       <br>
 
       <h3>動作環境</h3>
-      @vue/cli 4.5.4<br>
-      d3 6.14.6<br>
+      vue/cli ... 4.5.4<br>
+      npm d3 ... 6.14.6<br>
       <br>
       <br>
 
