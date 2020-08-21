@@ -26,17 +26,4 @@
 </template>
 
 <script>
-// @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
 </script>
-
-<style lang="scss">
-.container {
-    font-size: 16px;
-    padding: 60px 20px 20px 20px;
-    height: 86vh;
-}
-.memo {
-  text-align: left;
-}
-</style>

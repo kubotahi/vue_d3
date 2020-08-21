@@ -79,4 +79,14 @@
     text-decoration: none;
 }
 
+.container {
+    font-size: 16px;
+    padding: 10px;
+    height: 86vh;
+}
+
+.memo {
+  text-align: left;
+}
+
 </style>
