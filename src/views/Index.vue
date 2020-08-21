@@ -11,7 +11,7 @@
       <br>
 
       <h3>Bible</h3>
-      <a href="https://vuejs.org/" target="_blank">https://vuejs.org/</a><br>
+      <a href="https://cli.vuejs.org/" target="_blank">https://cli.vuejs.org/</a><br>
       <a href="https://d3js.org/" target="_blank">https://d3js.org/</a><br>
       <a href="https://www.npmjs.com/package/d3" target="_blank">https://www.npmjs.com/package/d3</a><br>
       <a href="https://github.com/gywgithub/vue-d3-examples" target="_blank">https://github.com/gywgithub/vue-d3-examples</a><br>
