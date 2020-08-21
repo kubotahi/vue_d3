@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <div class="col_2">
+    <div class="pos">
       <svg class="svg_g1" width="100%" height="400"></svg>
     </div>
 
@@ -84,3 +84,9 @@ export default {
 }
 
 </script>
+<style>
+.pos {
+  margin: auto;
+  width: 400px;
+}
+</style>

@@ -1,8 +1,11 @@
 <template>
   <div class="container">
 
-    <div class="col_2">
+    <div class="pos">
       <div class="chart"></div>
+
+      <br>
+      Graph with div only.
     </div>
 
   </div>
@@ -39,4 +42,9 @@ export default {
 .container-chart {
   margin: auto;
 }
+.pos {
+  margin: auto;
+  width: 400px;
+}
+
 </style>

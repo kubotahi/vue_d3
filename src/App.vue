@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <router-link to="/"><div class="title">Vue.js + D3.js Examples</div></router-link>
+    <div class="title">Vue.js + D3.js Examples</div>
     <div id="nav">
+      <router-link to="/">Info</router-link> | 
       <router-link to="/01">01 Hello</router-link> | 
       <router-link to="/02">02 Tree Map</router-link> | 
       <router-link to="/03">03 Force Directed 1</router-link> | 
@@ -26,7 +27,15 @@
       <router-link to="/22">22 Bubble Chart 3</router-link> | 
       <router-link to="/23">23 Bubble Chart 4</router-link>
     </div>
+
+    Source:
+    <a href="https://github.com/kubotahi/vue_d3" target="_blank">https://github.com/kubotahi/vue_d3</a><br>
+
+    <hr>
+
     <router-view/>
+
+
   </div>
 </template>
 
@@ -50,7 +59,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
 
   a {
     font-weight: bold;

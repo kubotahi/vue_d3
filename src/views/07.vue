@@ -1,9 +1,7 @@
 <template>
   <div class="container">
 
-    <div class="col_2">
-      <svg></svg>
-    </div>
+    <svg></svg>
 
   </div>
 </template>
@@ -17,7 +15,7 @@ export default {
   },
   mounted () {
     // let marge = { top: 60, bottom: 60, left: 60, right: 60 }
-    let dataset = [250, 210, 170, 130, 90]
+    let dataset = [30, 120, 90, 278, 250, 210, 170, 130, 90]
     let svg = d3.select('svg')
 
     // SVGのリセット
@@ -39,7 +37,7 @@ export default {
         return d
       })
       .attr('height', rectHeight - 5)
-      .attr('fill', 'lightblue')
+      .attr('fill', '#10be2c')
   }
 }
 

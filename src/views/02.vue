@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <svg id="vizTreeII" width="600" height="600"/>
+    <svg id="vizTreeII" width="100%" height="100%"/>
 
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <svg width="600" height="600"></svg>
+    <svg width="100%" height="100%"></svg>
 
   </div>
 </template>
@@ -20,8 +20,11 @@ export default {
     // SVGのリセット
     svg.selectAll("*").remove()
 
-    let width = svg.attr('width')
-    let height = svg.attr('height')
+    //let width = svg.attr('width')
+    //let height = svg.attr('height')
+    let width = 1000
+    let height = 600
+
     let g = svg.append('g')
       .attr('transform', 'translate(' + marge.top + ',' + marge.left + ')')
 

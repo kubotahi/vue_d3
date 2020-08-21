@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     draw_Graph() {
-      let width = 400;
+      let width = 1000;
       let height = 400;
 
       let svg = d3.select('.svg_g1')
@@ -72,8 +72,8 @@ export default {
       // Once the force algorithm is happy with positions ('alpha' value is low enough), simulations will stop.
       simulation
           .nodes(data)
-          .on("tick", function(d){
-            console.log(d)
+          .on("tick", function(){
+            //console.log(d)
             node
                 .attr("cx", function(d){ return d.x; })
                 .attr("cy", function(d){ return d.y; })

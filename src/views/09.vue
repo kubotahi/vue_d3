@@ -1,15 +1,11 @@
 <template>
   <div class="container">
 
-    <div class="col_2">
-
-      <svg width="500" height="270">
-        <g style="transform: translate(0, 10px)">
-          <path :d="line" />
-        </g>
-      </svg>
-
-    </div>
+    <svg width="500" height="270">
+      <g style="transform: translate(0, 10px)">
+        <path :d="line" />
+      </g>
+    </svg>
 
   </div>
 

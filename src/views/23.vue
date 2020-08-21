@@ -3,7 +3,7 @@
 
     <div class="col_2">
       <div class="graph_1">
-        <svg class="svg_g1" width="100%" height="100%" viewBox="500 500 1000 1000"></svg>
+        <svg class="svg_g1" width="100%" height="100%" viewBox="0 0 1000 1000"></svg>
       </div>
     </div>
 
@@ -19,8 +19,8 @@ export default {
   },
   mounted () {
 
-    let width = 2000;
-    let height = 2000;
+    let width = 1000;
+    let height = 1000;
 
     let svg = d3.select('.svg_g1')
 

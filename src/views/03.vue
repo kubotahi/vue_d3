@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <svg id="svg" width="600" height="600"></svg>
+    <svg id="svg" width="100%" height="100%"></svg>
 
   </div>
 </template>
@@ -20,8 +20,10 @@ export default {
     // SVGのリセット
     svg.selectAll("*").remove()
 
-    let width = +svg.attr('width')
-    let height = +svg.attr('height')
+    //let width = +svg.attr('width')
+    //let height = +svg.attr('height')
+    let width = 1000
+    let height = 600
 
     let radius = 15
 

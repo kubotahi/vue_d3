@@ -52,8 +52,8 @@ export default {
 
     // 母点
     //var vertices = d3.range(10).map(function(d) {
-    var vertices = d3.range(50).map(function(d) {
-      console.log(d)
+    var vertices = d3.range(50).map(function() {
+      //console.log(d)
       return [Math.random() * width, Math.random() * height];
     });
 
@@ -62,11 +62,6 @@ export default {
     // 領域? x座標?
     var voronoi = d3.voronoi().extent([[0, 0], [width, height]]);
     //console.log(voronoi)
-
-
-
-    //var path = svg.append("g").selectAll("path");
-    //console.log(path)
 
     var path = g.selectAll("path");
 

@@ -49,38 +49,10 @@ export default {
       return "M" + d.join("L") + "Z"; 
     }
 
-
-    // color
-    //var c10 = d3.schemePaired;
-    //console.log(c10)
-
-    // 母点
-    /*
-    //var vertices = d3.range(10).map(function(d) {
-    var vertices = d3.range(50).map(function(d) {
-      console.log(d)
-      return [Math.random() * width, Math.random() * height];
-    });
-
-    console.log(vertices)
-    */
-
-    //let vxd = [500, 200, 800, 200, 800, 500, 500, 200, 800]
-    //let vyd = [500, 200, 800, 800, 200, 200, 800, 500, 500]
-
     let radius = 10;
     let angle = 0;
 
-    //var vartices = []
-    //var vertices = d3.range(3).map(function(d) {
-    //var vertices = d3.range(6).map(function(d) {
-    //var vertices = d3.range(9).map(function(d) {
-    var vertices = d3.range(50).map(function(d) {
-      //let vx = 0, vy = 0
-      //let vx = vxd[d]
-      //let vy = vyd[d]
-      console.log(d)
-    
+    var vertices = d3.range(50).map(function() {    
       let vx = 500 + radius * Math.cos(angle)
       let vy = 500 + radius * Math.sin(angle)
 
@@ -92,12 +64,9 @@ export default {
     });
     //console.log(vertices)
 
-
     // 領域? x座標?
     var voronoi = d3.voronoi().extent([[0, 0], [width, height]]);
     //console.log(voronoi)
-
-
 
     //var path = svg.append("g").selectAll("path");
     //console.log(path)
@@ -113,22 +82,6 @@ export default {
       .attr("fill", "#42b951")
       .attr("d", polygon);
 
-
-    // voronoi 母点
-    /*
-    //svg.selectAll("circle")
-    g.selectAll("circle")
-      .data(vertices)
-      .enter()
-      .append("circle")
-      .attr("r", 3)
-      .attr("cx", function(d) {
-        return d[0]
-      })
-      .attr("cy", function(d) {
-        return d[1]
-      });
-    */
 
     // text
     g.selectAll('text')
