@@ -22,10 +22,10 @@
       <router-link to="/17">17 Voronoi 5</router-link> | 
       <router-link to="/18">18 Voronoi 6</router-link> | 
       <router-link to="/19">19 Voronoi 7</router-link> | 
-      <router-link to="/20">20 Bubble Chart 1</router-link> | 
-      <router-link to="/21">21 Bubble Chart 2</router-link> | 
-      <router-link to="/22">22 Bubble Chart 3</router-link> | 
-      <router-link to="/23">23 Bubble Chart 4</router-link>
+      <router-link to="/20">20 Circle Packing 1</router-link> | 
+      <router-link to="/21">21 Circle Packing 2</router-link> | 
+      <router-link to="/22">22 Circle Packing 3</router-link> | 
+      <router-link to="/23">23 Circle Packing 4</router-link>
     </div>
 
     Source:
