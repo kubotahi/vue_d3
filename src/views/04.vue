@@ -20,6 +20,13 @@ export default {
     // SVGのリセット
     svg.selectAll("*").remove()
 
+    // add zoom capabilities
+    let zoomHandler = d3.zoom()
+      .on('zoom', zoomActions)
+
+    zoomHandler(svg)
+
+
     //let width = svg.attr('width')
     //let height = svg.attr('height')
     let width = 1000
@@ -115,14 +122,14 @@ export default {
       )
     // 绘制节点
     gs.append('circle')
-      .attr('r', 10)
+      .attr('r', 20)
       .attr('fill', function (d, i) {
         return colorScale(i)
       })
     // 文字
     gs.append('text')
-      .attr('x', -10)
-      .attr('y', -20)
+      .attr('x', -5)
+      .attr('y', -10)
       .attr('dy', 10)
       .text(function (d) {
         return d.name
@@ -159,6 +166,12 @@ export default {
       d.fx = null
       d.fy = null
     }
+
+    // Zoom functions
+    function zoomActions () {
+      g.attr('transform', d3.event.transform)
+    }
+
   }
 }
 </script>

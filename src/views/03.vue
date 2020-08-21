@@ -225,14 +225,3 @@ export default {
   }
 }
 </script>
-<style>
-.links line {
-  stroke: #999;
-  stroke-opacity: 0.6;
-}
-
-.nodes circle {
-  stroke: black;
-  stroke-width: 0px;
-}
-</style>

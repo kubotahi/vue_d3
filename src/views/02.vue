@@ -165,7 +165,7 @@ export default {
         .attr('class', 'node')
         .attr('r', 1e-6)
         .style('fill', function (d) {
-          return d._children ? '#c9e4ff' : '#fff'
+          return d._children ? '#2aa151' : '#fff'
         })
 
       // Add labels for the nodes
@@ -193,7 +193,7 @@ export default {
       nodeUpdate.select('circle.node')
         .attr('r', 10)
         .style('fill', function (d) {
-          return d._children ? '#c9e4ff' : '#fff'
+          return d._children ? '#2aa151' : '#fff'
         })
         .style('stroke-width', function () {
           return '2px'
