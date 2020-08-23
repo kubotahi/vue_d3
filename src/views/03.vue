@@ -25,7 +25,7 @@ export default {
     //let width = 1000
     //let height = 600
     let width = window.innerWidth
-    let height = window.innerHeight - 500
+    let height = window.innerHeight - 300
 
     let radius = 15
 
