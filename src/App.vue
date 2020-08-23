@@ -40,53 +40,5 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-.title {
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 2px 40px;
-    border-radius: 4px;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-#nav {
-  padding: 10px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-
-#nav a.router-link-exact-active {
-    color: #ffffff;
-    background-color: #a8118d;
-    border-radius: 4px;
-    padding: 0px 4px;
-    text-decoration: none;
-}
-
-.container {
-    font-size: 16px;
-    padding: 10px;
-    height: 86vh;
-}
-
-.memo {
-  text-align: left;
-}
-
+@import "./assets/css/style.scss"
 </style>
