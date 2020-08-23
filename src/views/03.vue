@@ -22,8 +22,10 @@ export default {
 
     //let width = +svg.attr('width')
     //let height = +svg.attr('height')
-    let width = 1000
-    let height = 600
+    //let width = 1000
+    //let height = 600
+    let width = window.innerWidth
+    let height = window.innerHeight - 500
 
     let radius = 15
 

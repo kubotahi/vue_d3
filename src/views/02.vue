@@ -95,8 +95,10 @@ export default {
     }
 
     let margin = { top: 120, right: 90, bottom: 30, left: 90 }
-    let width = 960 - margin.left - margin.right
-    let height = 600 - margin.top - margin.bottom
+    //let width = 960 - margin.left - margin.right
+    //let height = 600 - margin.top - margin.bottom
+    let width = window.innerWidth
+    let height = window.innerHeight - 500
 
     let svg = d3.select('#vizTreeII')
 

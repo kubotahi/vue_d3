@@ -15,8 +15,10 @@ export default {
   },
   mounted () {
 
-    let width = 1000;
-    let height = 400;
+    //let width = 1000;
+    //let height = 400;
+    let width = window.innerWidth
+    let height = window.innerHeight - 400
 
     let svg = d3.select('.svg_g1')
 
